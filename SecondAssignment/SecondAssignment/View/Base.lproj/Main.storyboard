@@ -60,7 +60,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="loginButtonPressed:" destination="Qv9-Eu-ysm" eventType="touchUpInside" id="vL2-qv-4Tl"/>
+                                    <action selector="loginButtonPressed:" destination="Qv9-Eu-ysm" eventType="touchUpInside" id="Ret-QJ-3tq"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiplogo" translatesAutoresizingMaskIntoConstraints="NO" id="qpG-ky-rQn">
@@ -126,7 +126,7 @@
         <!--Calculation View Controller-->
         <scene sceneID="686-cr-hJj">
             <objects>
-                <viewController storyboardIdentifier="CalculationView" id="HLd-Od-7vu" customClass="CalculationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculationView" id="HLd-Od-7vu" customClass="CalculationViewController" customModule="SecondAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oip-FY-u4X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,14 +268,11 @@
                     <connections>
                         <outlet property="avatarImage" destination="xOp-3m-s0x" id="RA6-oT-bsn"/>
                         <outlet property="billAmountTextField" destination="wRh-ih-ARb" id="hOH-un-sw0"/>
-                        <outlet property="billAmountTextFiled" destination="wRh-ih-ARb" id="3XH-KL-hzM"/>
-                        <outlet property="billPercentageSegment" destination="J1N-ro-9Gd" id="uDE-aQ-uAl"/>
                         <outlet property="calculateButton" destination="RIE-4S-0gT" id="1b5-Pl-f7M"/>
                         <outlet property="nameLabel" destination="c4m-XG-yKZ" id="wqc-gR-3pK"/>
                         <outlet property="numberOfPeopleLabel" destination="LD1-Hf-Bvg" id="Xgf-N3-Tdd"/>
                         <outlet property="numberOfPeopleStepper" destination="oPk-kC-gEF" id="Cvb-et-oQ2"/>
-                        <outlet property="numberofPeopleStepper" destination="oPk-kC-gEF" id="Hji-dY-vdl"/>
-                        <outlet property="tipPercentageSegment" destination="J1N-ro-9Gd" id="uwE-Dp-Fad"/>
+                        <outlet property="tipPercentageSegment" destination="J1N-ro-9Gd" id="RoN-lR-6aG"/>
                         <outlet property="usernameLabel" destination="863-Ck-fDM" id="PYD-Ul-BNI"/>
                     </connections>
                 </viewController>

@@ -13,10 +13,14 @@ class CalculationViewController: UIViewController {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var usernameLabel: UILabel!
   @IBOutlet weak var billAmountTextField: UITextField!
-  @IBOutlet weak var billPercentageSegment: UISegmentedControl!
+
+  @IBOutlet weak var tipPercentageSegment: UISegmentedControl!
   @IBOutlet weak var numberOfPeopleStepper: UIStepper!
   @IBOutlet weak var numberOfPeopleLabel: UILabel!
   @IBOutlet weak var calculateButton: UIButton!
+  
+  private var nameValue: String?
+  private var usernameValue: String?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,6 +28,9 @@ class CalculationViewController: UIViewController {
     avatarImage.layer.cornerRadius = 10 // set avatar image borderradius
     avatarImage.layer.borderColor = UIColor.darkGray.cgColor // set its border color
     avatarImage.layer.borderWidth = 2 // sets borderwidth
+    
+    nameLabel.text = nameValue ?? ""
+    usernameLabel.text = "@" + (usernameValue ?? "")
     
     numberOfPeopleLabel.text = String(Int(numberOfPeopleStepper.value)) // sets numberOfPeopleLabel according to stepper's value
     
@@ -37,6 +44,20 @@ class CalculationViewController: UIViewController {
   
   @IBAction func numberOfPeopleValueChanged(_ sender: UIStepper) {
     numberOfPeopleLabel.text = String(Int(sender.value)) // change the value of the numberOfPeopleLabel according to our stepper
+  }
+  
+  func addObserveMethod() {
+    NotificationCenter.default.addObserver(self, selector: #selector(didUserValueReceived), name: .userData, object: nil)
+  }
+  
+  @objc
+  func didUserValueReceived(_ notification: NSNotification) {
+    let userInfo = notification.userInfo
+    let userData = userInfo?["userValues"] as? User
+
+    nameValue = userData?.name
+    usernameValue = userData?.username
+    
   }
   
   

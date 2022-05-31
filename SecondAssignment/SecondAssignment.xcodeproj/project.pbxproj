@@ -16,6 +16,7 @@
 		C078111528461F15007373FC /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111428461F15007373FC /* Extension+UITextField.swift */; };
 		C078111A28462317007373FC /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111928462317007373FC /* CalculationViewController.swift */; };
 		C078111C284628FD007373FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111B284628FD007373FC /* User.swift */; };
+		C078111F284629BD007373FC /* Extension+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111E284629BD007373FC /* Extension+Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C078111428461F15007373FC /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		C078111928462317007373FC /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
 		C078111B284628FD007373FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C078111E284629BD007373FC /* Extension+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Notification.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				C078111428461F15007373FC /* Extension+UITextField.swift */,
+				C078111E284629BD007373FC /* Extension+Notification.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				C078111A28462317007373FC /* CalculationViewController.swift in Sources */,
 				C078111C284628FD007373FC /* User.swift in Sources */,
 				C078111528461F15007373FC /* Extension+UITextField.swift in Sources */,
+				C078111F284629BD007373FC /* Extension+Notification.swift in Sources */,
 				C078110128461C3A007373FC /* AppDelegate.swift in Sources */,
 				C078110328461C3A007373FC /* SceneDelegate.swift in Sources */,
 			);
