@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+ // Connections
   @IBOutlet weak var usernameTextField: UITextField!
   @IBOutlet weak var nameTextField: UITextField!
   @IBOutlet weak var loginButton: UIButton!
