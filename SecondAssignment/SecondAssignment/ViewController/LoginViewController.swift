@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var usernameTextField: UITextField!
   @IBOutlet weak var nameTextField: UITextField!
   @IBOutlet weak var loginButton: UIButton!
+  @IBOutlet weak var saveDataButton: UIButton!
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -19,6 +21,8 @@ class LoginViewController: UIViewController {
     usernameTextField.setIcon(UIImage(named: "user")!) // sets usernametextfield icon
     nameTextField.setIcon(UIImage(named: "name")!) // sets nametextfield icon
     loginButton.layer.cornerRadius = 5 // set the border radius of button
+    saveDataButton.layer.cornerRadius = 5
+    
   }
 
   @IBAction func loginButtonPressed(_ sender: UIButton) {

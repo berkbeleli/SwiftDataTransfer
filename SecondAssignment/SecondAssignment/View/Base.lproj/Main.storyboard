@@ -70,12 +70,24 @@
                                     <constraint firstAttribute="width" constant="100" id="rL5-V8-sg0"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-GM-HWz">
+                                <rect key="frame" x="30" y="598" width="354" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9FD-gR-3FS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save Data">
+                                    <color key="baseForegroundColor" red="0.85624498130000004" green="0.74084633590000004" blue="0.62133979800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EqU-0o-Mt8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EqU-0o-Mt8" firstAttribute="trailing" secondItem="PqO-YQ-W2p" secondAttribute="trailing" id="05O-dk-cYl"/>
                             <constraint firstItem="EqU-0o-Mt8" firstAttribute="trailing" secondItem="PqO-YQ-W2p" secondAttribute="trailing" id="0XS-8q-adD"/>
+                            <constraint firstItem="ovc-GM-HWz" firstAttribute="top" secondItem="Tls-ty-vnh" secondAttribute="bottom" constant="20" id="0uJ-QL-Jzc"/>
                             <constraint firstItem="EqU-0o-Mt8" firstAttribute="trailing" secondItem="PqO-YQ-W2p" secondAttribute="trailing" id="9AV-SH-4Xh"/>
                             <constraint firstItem="Yd5-b7-dHd" firstAttribute="top" secondItem="qpG-ky-rQn" secondAttribute="top" constant="253" id="CnC-ow-oJj"/>
                             <constraint firstItem="Tls-ty-vnh" firstAttribute="leading" secondItem="EqU-0o-Mt8" secondAttribute="leading" constant="30" id="FhA-ou-I22"/>
@@ -84,9 +96,11 @@
                             <constraint firstItem="PqO-YQ-W2p" firstAttribute="top" secondItem="vWM-pE-VD1" secondAttribute="top" id="IY5-oh-b3A"/>
                             <constraint firstItem="EqU-0o-Mt8" firstAttribute="trailing" secondItem="Tls-ty-vnh" secondAttribute="trailing" constant="30" id="Qkm-Ah-hBK"/>
                             <constraint firstItem="PqO-YQ-W2p" firstAttribute="leading" secondItem="EqU-0o-Mt8" secondAttribute="leading" id="Qn6-kn-3jK"/>
+                            <constraint firstItem="ovc-GM-HWz" firstAttribute="leading" secondItem="EqU-0o-Mt8" secondAttribute="leading" constant="30" id="RJB-4L-yRM"/>
                             <constraint firstItem="qpG-ky-rQn" firstAttribute="top" secondItem="vWM-pE-VD1" secondAttribute="top" constant="85" id="SVr-Wf-fiT"/>
                             <constraint firstItem="EqU-0o-Mt8" firstAttribute="trailing" secondItem="Yd5-b7-dHd" secondAttribute="trailing" constant="30" id="XRI-Rc-eYn"/>
                             <constraint firstItem="QlX-Gt-Hqb" firstAttribute="leading" secondItem="EqU-0o-Mt8" secondAttribute="leading" constant="30" id="cmy-aZ-sx1"/>
+                            <constraint firstItem="EqU-0o-Mt8" firstAttribute="trailing" secondItem="ovc-GM-HWz" secondAttribute="trailing" constant="30" id="hin-LI-0cM"/>
                             <constraint firstItem="Yd5-b7-dHd" firstAttribute="leading" secondItem="EqU-0o-Mt8" secondAttribute="leading" constant="30" id="ivw-T6-tHi"/>
                             <constraint firstItem="qpG-ky-rQn" firstAttribute="centerX" secondItem="PqO-YQ-W2p" secondAttribute="centerX" id="jYF-ye-ACx"/>
                             <constraint firstItem="EqU-0o-Mt8" firstAttribute="trailing" secondItem="QlX-Gt-Hqb" secondAttribute="trailing" constant="30" id="kBL-XG-SB2"/>
@@ -98,6 +112,7 @@
                     <connections>
                         <outlet property="loginButton" destination="Tls-ty-vnh" id="xWn-UM-AYt"/>
                         <outlet property="nameTextField" destination="QlX-Gt-Hqb" id="kU5-ns-Rj8"/>
+                        <outlet property="saveDataButton" destination="ovc-GM-HWz" id="fZr-dM-ulQ"/>
                         <outlet property="usernameTextField" destination="Yd5-b7-dHd" id="5TF-Vv-adx"/>
                     </connections>
                 </viewController>

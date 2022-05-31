@@ -2,7 +2,7 @@
 //  ResultViewController.swift
 //  SecondAssignment
 //
-//  Created by Berk Beleli on 2022-05-31.
+//  Created by Berk Beleli on 2022-05-30.
 //
 
 import UIKit
