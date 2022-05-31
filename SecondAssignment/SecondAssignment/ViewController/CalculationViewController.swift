@@ -35,6 +35,11 @@ class CalculationViewController: UIViewController {
   }
   
   
+  @IBAction func numberOfPeopleValueChanged(_ sender: UIStepper) {
+    numberOfPeopleLabel.text = String(Int(sender.value)) // change the value of the numberOfPeopleLabel according to our stepper
+  }
+  
+  
   ///Observes if the first character of the textfield is $ symbol otherwise put $ symbol beginning of the textfield
   @objc
   func billAmountadded(textfield: UITextField) {

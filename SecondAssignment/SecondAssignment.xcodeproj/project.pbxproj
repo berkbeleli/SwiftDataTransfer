@@ -15,6 +15,7 @@
 		C078110D28461C3D007373FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C078110B28461C3D007373FC /* LaunchScreen.storyboard */; };
 		C078111528461F15007373FC /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111428461F15007373FC /* Extension+UITextField.swift */; };
 		C078111A28462317007373FC /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111928462317007373FC /* CalculationViewController.swift */; };
+		C078111C284628FD007373FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111B284628FD007373FC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C078110E28461C3D007373FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C078111428461F15007373FC /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		C078111928462317007373FC /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
+		C078111B284628FD007373FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				C078110028461C3A007373FC /* AppDelegate.swift */,
 				C078110228461C3A007373FC /* SceneDelegate.swift */,
+				C078111D28462917007373FC /* Models */,
 				C078111828462163007373FC /* View */,
 				C078111728462158007373FC /* ViewController */,
 				C07811162846214D007373FC /* Extensions */,
@@ -95,6 +98,14 @@
 				C078110628461C3A007373FC /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C078111D28462917007373FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C078111B284628FD007373FC /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			files = (
 				C078110528461C3A007373FC /* LoginViewController.swift in Sources */,
 				C078111A28462317007373FC /* CalculationViewController.swift in Sources */,
+				C078111C284628FD007373FC /* User.swift in Sources */,
 				C078111528461F15007373FC /* Extension+UITextField.swift in Sources */,
 				C078110128461C3A007373FC /* AppDelegate.swift in Sources */,
 				C078110328461C3A007373FC /* SceneDelegate.swift in Sources */,

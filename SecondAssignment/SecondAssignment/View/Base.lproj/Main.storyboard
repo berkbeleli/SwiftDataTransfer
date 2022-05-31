@@ -201,7 +201,7 @@
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" wraps="YES" value="1" minimumValue="1" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="oPk-kC-gEF">
                                         <rect key="frame" x="310" y="356" width="94" height="32"/>
                                         <connections>
-                                            <action selector="numberOfPeopleValueChanged:" destination="HLd-Od-7vu" eventType="valueChanged" id="ekU-Y7-Vdb"/>
+                                            <action selector="numberOfPeopleValueChanged:" destination="HLd-Od-7vu" eventType="valueChanged" id="EIp-GE-nkH"/>
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stepper Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD1-Hf-Bvg">
