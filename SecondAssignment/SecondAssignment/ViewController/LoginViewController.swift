@@ -23,40 +23,38 @@ class LoginViewController: UIViewController {
 
   @IBAction func loginButtonPressed(_ sender: UIButton) {
     
-    if usernameTextField.text?.count == 0 || nameTextField.text?.count == 0{
+    if usernameTextField.text?.count == 0 || nameTextField.text?.count == 0{ // checks if either of textfields empty
       
-      if usernameTextField.text?.count == 0 && nameTextField.text?.count == 0{
-        usernameTextField.layer.borderColor = UIColor.red.cgColor
-        usernameTextField.layer.borderWidth = 3
-        nameTextField.layer.borderColor = UIColor.red.cgColor
-        nameTextField.layer.borderWidth = 3
-      }else if usernameTextField.text?.count == 0{
-        usernameTextField.layer.borderColor = UIColor.red.cgColor
-        usernameTextField.layer.borderWidth = 3
-      }else{
-        nameTextField.layer.borderColor = UIColor.red.cgColor
-        nameTextField.layer.borderWidth = 3
+      if usernameTextField.text?.count == 0 && nameTextField.text?.count == 0{ // if both empty
+        usernameTextField.layer.borderColor = UIColor.red.cgColor // change border color
+        usernameTextField.layer.borderWidth = 3 // change border width
+        nameTextField.layer.borderColor = UIColor.red.cgColor // change border color
+        nameTextField.layer.borderWidth = 3 // change border width
+      }else if usernameTextField.text?.count == 0{ // if only username is empty
+        usernameTextField.layer.borderColor = UIColor.red.cgColor // change border color
+        usernameTextField.layer.borderWidth = 3 // change border width
+      }else{ //if name text field empty
+        nameTextField.layer.borderColor = UIColor.red.cgColor // change border color
+        nameTextField.layer.borderWidth = 3 // change border width
       }
       
-    }else {
-      usernameTextField.layer.borderColor = UIColor.clear.cgColor
-      usernameTextField.layer.borderWidth = 0
-      nameTextField.layer.borderColor = UIColor.clear.cgColor
-      nameTextField.layer.borderWidth = 0
+    }else { // if none of the textfield empty
+      usernameTextField.layer.borderColor = UIColor.clear.cgColor // change border color
+      usernameTextField.layer.borderWidth = 0 // change border width
+      nameTextField.layer.borderColor = UIColor.clear.cgColor // change border color
+      nameTextField.layer.borderWidth = 0 // change border width
       
-      if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CalculationView") as? CalculationViewController {
+      if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CalculationView") as? CalculationViewController { // instantiate calculationview
         
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true) // push the calculation view
         
-        let newUser = User(name: nameTextField.text!, username: usernameTextField.text!)
-        vc.addObserveMethod()
-        NotificationCenter.default.post(name: .userData, object: nil, userInfo: ["userValues": newUser])
+        let newUser = User(name: nameTextField.text!, username: usernameTextField.text!) // create a new user object according to the entered values
+        vc.addObserveMethod() // instantiate calculationview observer
+        NotificationCenter.default.post(name: .userData, object: nil, userInfo: ["userValues": newUser]) // post entered value  to receive from calculationview
       }
-      
-      
+    
     }
     
   }
   
 }
-
