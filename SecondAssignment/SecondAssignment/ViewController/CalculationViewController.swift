@@ -93,8 +93,13 @@ class CalculationViewController: UIViewController {
     
   }
   
-  
-  
+  /// Sets the value of the objects to Default
+  func clearScreen() {
+    billAmountTextField.text = "" // empty textfield
+    tipPercentageSegment.selectedSegmentIndex = 0 // set default segment value
+    numberOfPeopleStepper.value = 1 //// set default stepper value
+    numberOfPeopleLabel.text = String(Int(numberOfPeopleStepper.value))
+  }
   
 }
 
