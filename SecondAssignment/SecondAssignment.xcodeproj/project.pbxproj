@@ -17,6 +17,9 @@
 		C078111A28462317007373FC /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111928462317007373FC /* CalculationViewController.swift */; };
 		C078111C284628FD007373FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111B284628FD007373FC /* User.swift */; };
 		C078111F284629BD007373FC /* Extension+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111E284629BD007373FC /* Extension+Notification.swift */; };
+		C0781121284639CD007373FC /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0781120284639CD007373FC /* TipModel.swift */; };
+		C078112328463A16007373FC /* CalculationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078112228463A16007373FC /* CalculationViewControllerDelegate.swift */; };
+		C078112628463A6A007373FC /* TipBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078112528463A6A007373FC /* TipBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		C078111928462317007373FC /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
 		C078111B284628FD007373FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C078111E284629BD007373FC /* Extension+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Notification.swift"; sourceTree = "<group>"; };
+		C0781120284639CD007373FC /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
+		C078112228463A16007373FC /* CalculationViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewControllerDelegate.swift; sourceTree = "<group>"; };
+		C078112528463A6A007373FC /* TipBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 			children = (
 				C078110028461C3A007373FC /* AppDelegate.swift */,
 				C078110228461C3A007373FC /* SceneDelegate.swift */,
+				C078112428463A1F007373FC /* Delegate */,
 				C078111D28462917007373FC /* Models */,
 				C078111828462163007373FC /* View */,
 				C078111728462158007373FC /* ViewController */,
@@ -107,8 +114,18 @@
 			isa = PBXGroup;
 			children = (
 				C078111B284628FD007373FC /* User.swift */,
+				C0781120284639CD007373FC /* TipModel.swift */,
+				C078112528463A6A007373FC /* TipBrain.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C078112428463A1F007373FC /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C078112228463A16007373FC /* CalculationViewControllerDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +201,14 @@
 			files = (
 				C078110528461C3A007373FC /* LoginViewController.swift in Sources */,
 				C078111A28462317007373FC /* CalculationViewController.swift in Sources */,
+				C078112328463A16007373FC /* CalculationViewControllerDelegate.swift in Sources */,
 				C078111C284628FD007373FC /* User.swift in Sources */,
+				C078112628463A6A007373FC /* TipBrain.swift in Sources */,
 				C078111528461F15007373FC /* Extension+UITextField.swift in Sources */,
 				C078111F284629BD007373FC /* Extension+Notification.swift in Sources */,
 				C078110128461C3A007373FC /* AppDelegate.swift in Sources */,
 				C078110328461C3A007373FC /* SceneDelegate.swift in Sources */,
+				C0781121284639CD007373FC /* TipModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
