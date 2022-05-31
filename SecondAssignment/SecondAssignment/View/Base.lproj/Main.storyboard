@@ -221,7 +221,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="calculateClicked:" destination="HLd-Od-7vu" eventType="touchUpInside" id="5nU-za-DAQ"/>
+                                            <action selector="calculateClicked:" destination="HLd-Od-7vu" eventType="touchUpInside" id="gof-nj-zny"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -280,11 +280,107 @@
             </objects>
             <point key="canvasLocation" x="1849" y="69"/>
         </scene>
+        <!--Result View Controller-->
+        <scene sceneID="C8j-Aa-MNq">
+            <objects>
+                <viewController storyboardIdentifier="ResultView" id="1SD-2d-G5V" customClass="ResultViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umD-5F-iKm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWp-kb-VhU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiq-CV-L5J">
+                                        <rect key="frame" x="146" y="130" width="122" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9H-Hc-1jG">
+                                        <rect key="frame" x="175" y="189" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypr-mX-ZfB">
+                                        <rect key="frame" x="153.5" y="279" width="107" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKP-FK-YDN">
+                                        <rect key="frame" x="175" y="338" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Per Person:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5F-sk-vKW">
+                                        <rect key="frame" x="133.5" y="428" width="147" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usR-wC-57e">
+                                        <rect key="frame" x="175" y="487" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-Nu-zo9">
+                                        <rect key="frame" x="10" y="771" width="394" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dwe-ga-48Z"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Re-Calculate">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85624498130000004" green="0.74084633590000004" blue="0.62133979800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="usR-wC-57e" firstAttribute="centerX" secondItem="fWp-kb-VhU" secondAttribute="centerX" id="2PA-to-DAZ"/>
+                                    <constraint firstItem="aZc-Nu-zo9" firstAttribute="leading" secondItem="fWp-kb-VhU" secondAttribute="leading" constant="10" id="33i-fR-a0m"/>
+                                    <constraint firstItem="SKP-FK-YDN" firstAttribute="centerX" secondItem="fWp-kb-VhU" secondAttribute="centerX" id="8fO-lB-JAO"/>
+                                    <constraint firstAttribute="trailing" secondItem="aZc-Nu-zo9" secondAttribute="trailing" constant="10" id="CMz-Oy-0Wv"/>
+                                    <constraint firstAttribute="bottom" secondItem="aZc-Nu-zo9" secondAttribute="bottom" constant="75" id="G8e-hE-JCr"/>
+                                    <constraint firstItem="Oiq-CV-L5J" firstAttribute="top" secondItem="fWp-kb-VhU" secondAttribute="top" constant="130" id="J1A-ct-Jjx"/>
+                                    <constraint firstItem="w5F-sk-vKW" firstAttribute="centerX" secondItem="fWp-kb-VhU" secondAttribute="centerX" id="Rbs-OJ-U3g"/>
+                                    <constraint firstItem="usR-wC-57e" firstAttribute="top" secondItem="w5F-sk-vKW" secondAttribute="bottom" constant="35" id="SXg-I4-npm"/>
+                                    <constraint firstItem="Ypr-mX-ZfB" firstAttribute="top" secondItem="u9H-Hc-1jG" secondAttribute="bottom" constant="60" id="Ujl-c3-dVT"/>
+                                    <constraint firstItem="u9H-Hc-1jG" firstAttribute="centerX" secondItem="fWp-kb-VhU" secondAttribute="centerX" id="V5Y-VR-Oam"/>
+                                    <constraint firstItem="SKP-FK-YDN" firstAttribute="top" secondItem="Ypr-mX-ZfB" secondAttribute="bottom" constant="35" id="WdL-te-OXk"/>
+                                    <constraint firstItem="w5F-sk-vKW" firstAttribute="top" secondItem="SKP-FK-YDN" secondAttribute="bottom" constant="60" id="XHt-Zt-Mp0"/>
+                                    <constraint firstItem="Ypr-mX-ZfB" firstAttribute="centerX" secondItem="fWp-kb-VhU" secondAttribute="centerX" id="cee-yb-VFv"/>
+                                    <constraint firstItem="u9H-Hc-1jG" firstAttribute="top" secondItem="Oiq-CV-L5J" secondAttribute="bottom" constant="35" id="jCR-NP-zW9"/>
+                                    <constraint firstItem="Oiq-CV-L5J" firstAttribute="centerX" secondItem="fWp-kb-VhU" secondAttribute="centerX" id="sjx-eN-Yoj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G4M-bA-yDF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fWp-kb-VhU" secondAttribute="bottom" id="MzJ-DF-cV1"/>
+                            <constraint firstItem="fWp-kb-VhU" firstAttribute="top" secondItem="umD-5F-iKm" secondAttribute="top" id="PFq-Ko-c4G"/>
+                            <constraint firstItem="G4M-bA-yDF" firstAttribute="trailing" secondItem="fWp-kb-VhU" secondAttribute="trailing" id="gT6-JX-Pf0"/>
+                            <constraint firstItem="fWp-kb-VhU" firstAttribute="leading" secondItem="G4M-bA-yDF" secondAttribute="leading" id="l69-kB-g3k"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYC-fT-JhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2772" y="69"/>
+        </scene>
     </scenes>
     <resources>
         <image name="avatar" width="400" height="420.5"/>
         <image name="loginBackground" width="187.5" height="292.5"/>
         <image name="tiplogo" width="300" height="327"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
