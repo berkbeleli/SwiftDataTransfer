@@ -283,7 +283,7 @@
         <!--Result View Controller-->
         <scene sceneID="C8j-Aa-MNq">
             <objects>
-                <viewController storyboardIdentifier="ResultView" id="1SD-2d-G5V" customClass="ResultViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultView" id="1SD-2d-G5V" customClass="ResultViewController" customModule="SecondAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="umD-5F-iKm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
