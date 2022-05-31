@@ -21,6 +21,7 @@
 		C078112328463A16007373FC /* CalculationViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078112228463A16007373FC /* CalculationViewControllerDelegate.swift */; };
 		C078112628463A6A007373FC /* TipBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078112528463A6A007373FC /* TipBrain.swift */; };
 		C078112A28463D4E007373FC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078112928463D4E007373FC /* ResultViewController.swift */; };
+		C078112C284641BF007373FC /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078112B284641BF007373FC /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C078112228463A16007373FC /* CalculationViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewControllerDelegate.swift; sourceTree = "<group>"; };
 		C078112528463A6A007373FC /* TipBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipBrain.swift; sourceTree = "<group>"; };
 		C078112928463D4E007373FC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		C078112B284641BF007373FC /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				C078111428461F15007373FC /* Extension+UITextField.swift */,
 				C078111E284629BD007373FC /* Extension+Notification.swift */,
+				C078112B284641BF007373FC /* Extension+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				C078111528461F15007373FC /* Extension+UITextField.swift in Sources */,
 				C078111F284629BD007373FC /* Extension+Notification.swift in Sources */,
 				C078110128461C3A007373FC /* AppDelegate.swift in Sources */,
+				C078112C284641BF007373FC /* Extension+String.swift in Sources */,
 				C078110328461C3A007373FC /* SceneDelegate.swift in Sources */,
 				C0781121284639CD007373FC /* TipModel.swift in Sources */,
 				C078112A28463D4E007373FC /* ResultViewController.swift in Sources */,

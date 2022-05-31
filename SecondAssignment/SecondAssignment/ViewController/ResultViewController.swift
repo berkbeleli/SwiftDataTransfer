@@ -8,7 +8,7 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+  // Connections
   @IBOutlet weak var totalAmountLabel: UILabel!
   @IBOutlet weak var tipAmountLabel: UILabel!
   @IBOutlet weak var billForEachLabel: UILabel!
@@ -22,6 +22,8 @@ class ResultViewController: UIViewController {
     }
     
 
+  @IBAction func reCalculateButtonClicked(_ sender: UIButton) {
+  }
   
 
 }

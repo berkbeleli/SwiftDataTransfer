@@ -337,6 +337,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Re-Calculate">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reCalculateButtonClicked:" destination="1SD-2d-G5V" eventType="touchUpInside" id="UdG-GH-i65"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85624498130000004" green="0.74084633590000004" blue="0.62133979800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

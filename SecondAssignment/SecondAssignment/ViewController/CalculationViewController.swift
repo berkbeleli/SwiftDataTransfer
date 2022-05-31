@@ -19,8 +19,11 @@ class CalculationViewController: UIViewController {
   @IBOutlet weak var numberOfPeopleLabel: UILabel!
   @IBOutlet weak var calculateButton: UIButton!
   
+  //these two will keep the usernotification values
   private var nameValue: String?
   private var usernameValue: String?
+  
+  weak var delegate: CalculationViewControllerDelegate? // created a delegate
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -46,6 +49,7 @@ class CalculationViewController: UIViewController {
     numberOfPeopleLabel.text = String(Int(sender.value)) // change the value of the numberOfPeopleLabel according to our stepper
   }
   
+  /// this function adds observer for notificationcenter
   func addObserveMethod() {
     NotificationCenter.default.addObserver(self, selector: #selector(didUserValueReceived), name: .userData, object: nil)
   }
@@ -53,10 +57,10 @@ class CalculationViewController: UIViewController {
   @objc
   func didUserValueReceived(_ notification: NSNotification) {
     let userInfo = notification.userInfo
-    let userData = userInfo?["userValues"] as? User
+    let userData = userInfo?["userValues"] as? User // downcast the received value to User class
 
-    nameValue = userData?.name
-    usernameValue = userData?.username
+    nameValue = userData?.name // set the received name value to our variable
+    usernameValue = userData?.username  // set the received username value to our variable
     
   }
   
@@ -74,6 +78,18 @@ class CalculationViewController: UIViewController {
   
   
   @IBAction func calculateClicked(_ sender: UIButton) {
+    
+  }
+  
+  /// make Calculation according to entered values
+  func makeCalculation() {
+    
+    if billAmountTextField.text?.count ?? 0 > 1 { // checks if the textfield value count is bigger than 1
+      let billAmount = billAmountTextField.text?.substring(with: 1..<billAmountTextField.text!.count) // gets the text value except $ character inside the textfield
+    
+      let tempTip = TipModel(billAmount: Int(billAmount!) ?? 0, tipPercentage: tipPercentageSegment.selectedSegmentIndex, numberOfPeople: Int(numberOfPeopleStepper.value)) // create a TipModel object according to choices
+      delegate?.didEnteredBill(tip: tempTip) // sends the created tempTip to delegate function
+    }
     
   }
   
