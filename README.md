@@ -11,6 +11,7 @@ metotlarının üçününden seçtiğiniz bir tanesini kullanarak göndermenizi 
 
 Notes:
 I used Notification Center for sending username and name values from the register page to calculation page and used Delegate method for sending values from calculation page to result page. Also used UserDefaults to save username and name values
+
 Screenshots:
 
 ![Screenshot 2022-05-31 at 09 52 03 PM](https://user-images.githubusercontent.com/44535117/171264818-fa34af71-aba3-4009-9700-e708fc796458.png)
