@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7jn-Xf-lWI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -96,9 +96,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="VZL-Dz-EAO"/>
                     <connections>
-                        <outlet property="loginButton" destination="Tls-ty-vnh" id="gDA-Gg-abg"/>
-                        <outlet property="nameTextField" destination="QlX-Gt-Hqb" id="2Ua-U8-PXB"/>
-                        <outlet property="usernameTextField" destination="Yd5-b7-dHd" id="vUB-NB-m7A"/>
+                        <outlet property="loginButton" destination="Tls-ty-vnh" id="xWn-UM-AYt"/>
+                        <outlet property="nameTextField" destination="QlX-Gt-Hqb" id="kU5-ns-Rj8"/>
+                        <outlet property="usernameTextField" destination="Yd5-b7-dHd" id="5TF-Vv-adx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyz-2j-o47" sceneMemberID="firstResponder"/>

@@ -13,6 +13,7 @@
 		C078110828461C3A007373FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C078110628461C3A007373FC /* Main.storyboard */; };
 		C078110A28461C3D007373FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C078110928461C3D007373FC /* Assets.xcassets */; };
 		C078110D28461C3D007373FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C078110B28461C3D007373FC /* LaunchScreen.storyboard */; };
+		C078111528461F15007373FC /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078111428461F15007373FC /* Extension+UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C078110928461C3D007373FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C078110C28461C3D007373FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C078110E28461C3D007373FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C078111428461F15007373FC /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				C078110028461C3A007373FC /* AppDelegate.swift */,
 				C078110228461C3A007373FC /* SceneDelegate.swift */,
-				C078110428461C3A007373FC /* LoginViewController.swift */,
-				C078110628461C3A007373FC /* Main.storyboard */,
+				C078111828462163007373FC /* View */,
+				C078111728462158007373FC /* ViewController */,
+				C07811162846214D007373FC /* Extensions */,
 				C078110928461C3D007373FC /* Assets.xcassets */,
 				C078110B28461C3D007373FC /* LaunchScreen.storyboard */,
 				C078110E28461C3D007373FC /* Info.plist */,
 			);
 			path = SecondAssignment;
+			sourceTree = "<group>";
+		};
+		C07811162846214D007373FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C078111428461F15007373FC /* Extension+UITextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C078111728462158007373FC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C078110428461C3A007373FC /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C078111828462163007373FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C078110628461C3A007373FC /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C078110528461C3A007373FC /* LoginViewController.swift in Sources */,
+				C078111528461F15007373FC /* Extension+UITextField.swift in Sources */,
 				C078110128461C3A007373FC /* AppDelegate.swift in Sources */,
 				C078110328461C3A007373FC /* SceneDelegate.swift in Sources */,
 			);
