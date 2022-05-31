@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User { // definition of user structure
+struct User: Codable { // definition of user structure
   var name: String
   var username: String
 }

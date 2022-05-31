@@ -80,6 +80,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Save Data">
                                     <color key="baseForegroundColor" red="0.85624498130000004" green="0.74084633590000004" blue="0.62133979800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="Qv9-Eu-ysm" eventType="touchUpInside" id="tSx-Is-YSY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EqU-0o-Mt8"/>
@@ -398,6 +401,7 @@
             <point key="canvasLocation" x="2772" y="69"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="avatar" width="400" height="420.5"/>
         <image name="loginBackground" width="187.5" height="292.5"/>

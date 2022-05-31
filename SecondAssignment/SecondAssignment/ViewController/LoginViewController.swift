@@ -23,6 +23,12 @@ class LoginViewController: UIViewController {
     loginButton.layer.cornerRadius = 5 // set the border radius of button
     saveDataButton.layer.cornerRadius = 5
     
+    if let savedData = UserDefaults.standard.object(forKey: "SavedUser") as? Data { // checks to load savedUsed key for UserDefaults
+      let savedUser = try? JSONDecoder().decode(User.self, from: savedData) // decodes the encoded value
+      nameTextField.text = savedUser?.name // sets nameTextField value
+      usernameTextField.text = savedUser?.username // sets usernameTextFieldValu
+    }
+    
   }
 
   @IBAction func loginButtonPressed(_ sender: UIButton) {
@@ -61,4 +67,13 @@ class LoginViewController: UIViewController {
     
   }
   
+  @IBAction func saveButtonClicked(_ sender: UIButton) {
+    
+    if nameTextField.text?.count ?? 0 > 0 && usernameTextField.text?.count ?? 0 > 0 { // checks if the textfields empty
+      let saveUser = User(name: nameTextField.text!, username: usernameTextField.text!) // create an user according to the values
+      let encodedUser = try? JSONEncoder().encode(saveUser) // encode the values
+      UserDefaults.standard.set(encodedUser, forKey: "SavedUser") // save the encoded values
+    }
+  
+  }
 }
