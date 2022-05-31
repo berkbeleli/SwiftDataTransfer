@@ -14,16 +14,18 @@ class ResultViewController: UIViewController {
   @IBOutlet weak var billForEachLabel: UILabel!
   @IBOutlet weak var reCalculateButton: UIButton!
   
+  var delegate: CalculationViewController!
+  
   override func viewDidLoad() {
-        super.viewDidLoad()
-    
+    super.viewDidLoad()
     reCalculateButton.layer.cornerRadius = 5
     
-    }
-    
-
+    delegate?.delegate = self
+  }
+  
+  
   @IBAction func reCalculateButtonClicked(_ sender: UIButton) {
   }
   
-
+  
 }

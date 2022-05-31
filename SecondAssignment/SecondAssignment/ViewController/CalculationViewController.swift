@@ -69,6 +69,11 @@ class CalculationViewController: UIViewController {
   @objc
   func billAmountadded(textfield: UITextField) {
     
+    if billAmountTextField.layer.borderWidth == 3 { // checks if any error occurred and border width change as a result of the error if so fix it
+      billAmountTextField.layer.borderColor = UIColor.clear.cgColor
+      billAmountTextField.layer.borderWidth = 0
+    }
+    
     if textfield.text?.count == 1 { // checks if the count of the character equals 1
       if !textfield.text!.contains("$"){
         textfield.text = "$" + textfield.text! // if its first character not includes $  symbol puts symbol first
@@ -79,6 +84,18 @@ class CalculationViewController: UIViewController {
   
   @IBAction func calculateClicked(_ sender: UIButton) {
     
+    if billAmountTextField.text?.count ?? 0 < 2 {
+      billAmountTextField.layer.borderColor = UIColor.red.cgColor
+      billAmountTextField.layer.borderWidth = 3
+    }else {
+      
+      if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultView") as? ResultViewController {
+        vc.delegate = self
+        
+        present(vc, animated: true)
+      }
+      
+    }
   }
   
   /// make Calculation according to entered values
