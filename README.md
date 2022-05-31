@@ -8,8 +8,10 @@ Arkadaşlar selamlar! Acı çekeceğiniz ama bolca öğreneceğiniz haftanın ö
 3-) Closure  
 
 metotlarının üçününden seçtiğiniz bir tanesini kullanarak göndermenizi rica ediyoruz. Ödevin deadline'ı 01.06.2022 Çarşamba günü saat 17:00'a kadardır. Her türlü sorunuz için asistanlara ulaşmaktan çekinmeyin. Herkesin şimdiden emeğine sağlık, kolay gelsin.
-
+Notes:
+I used Notification Center for sending username and name values from the register page to calculation page and used Delegate method for sending values from calculation page to result page. Also used UserDefaults to save username and name values
 Screenshots:
+
 ![Screenshot 2022-05-31 at 09 52 03 PM](https://user-images.githubusercontent.com/44535117/171264818-fa34af71-aba3-4009-9700-e708fc796458.png)
 ![Screenshot 2022-05-31 at 09 52 30 PM](https://user-images.githubusercontent.com/44535117/171264825-e564f6af-4d42-4854-a284-9c699f610e5b.png)
 ![Screenshot 2022-05-31 at 09 52 45 PM](https://user-images.githubusercontent.com/44535117/171264831-cceab79e-6493-4389-8e9a-b6dda6b2ec8d.png)
