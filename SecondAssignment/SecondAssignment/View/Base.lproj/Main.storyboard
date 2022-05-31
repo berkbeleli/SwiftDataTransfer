@@ -368,6 +368,12 @@
                             <constraint firstItem="fWp-kb-VhU" firstAttribute="leading" secondItem="G4M-bA-yDF" secondAttribute="leading" id="l69-kB-g3k"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="billForEachLabel" destination="usR-wC-57e" id="85n-d3-gmy"/>
+                        <outlet property="reCalculateButton" destination="aZc-Nu-zo9" id="tbc-Dl-nll"/>
+                        <outlet property="tipAmountLabel" destination="SKP-FK-YDN" id="dmf-mm-k0C"/>
+                        <outlet property="totalAmountLabel" destination="u9H-Hc-1jG" id="kQy-C3-hBZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYC-fT-JhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
