@@ -266,14 +266,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="avatarImage" destination="xOp-3m-s0x" id="Xps-7P-Kp0"/>
+                        <outlet property="avatarImage" destination="xOp-3m-s0x" id="RA6-oT-bsn"/>
+                        <outlet property="billAmountTextField" destination="wRh-ih-ARb" id="hOH-un-sw0"/>
                         <outlet property="billAmountTextFiled" destination="wRh-ih-ARb" id="3XH-KL-hzM"/>
-                        <outlet property="calculateButton" destination="RIE-4S-0gT" id="B5i-Wt-9cM"/>
-                        <outlet property="nameLabel" destination="c4m-XG-yKZ" id="RRd-GY-Ans"/>
-                        <outlet property="numberOfPeopleLabel" destination="LD1-Hf-Bvg" id="6t9-q5-KI8"/>
+                        <outlet property="billPercentageSegment" destination="J1N-ro-9Gd" id="uDE-aQ-uAl"/>
+                        <outlet property="calculateButton" destination="RIE-4S-0gT" id="1b5-Pl-f7M"/>
+                        <outlet property="nameLabel" destination="c4m-XG-yKZ" id="wqc-gR-3pK"/>
+                        <outlet property="numberOfPeopleLabel" destination="LD1-Hf-Bvg" id="Xgf-N3-Tdd"/>
+                        <outlet property="numberOfPeopleStepper" destination="oPk-kC-gEF" id="Cvb-et-oQ2"/>
                         <outlet property="numberofPeopleStepper" destination="oPk-kC-gEF" id="Hji-dY-vdl"/>
                         <outlet property="tipPercentageSegment" destination="J1N-ro-9Gd" id="uwE-Dp-Fad"/>
-                        <outlet property="usernameLabel" destination="863-Ck-fDM" id="w72-Kv-FWL"/>
+                        <outlet property="usernameLabel" destination="863-Ck-fDM" id="PYD-Ul-BNI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1x9-6r-dPP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
