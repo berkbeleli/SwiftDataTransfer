@@ -1,14 +1,10 @@
 ### week2
 ## 2. ödev
 Objective:
-Arkadaşlar selamlar! Acı çekeceğiniz ama bolca öğreneceğiniz haftanın ödevi için sizlerden: 2 adet ekran oluşturup (View controller) bunlar arasında bilgi göndermenizi istiyoruz. Bu bilgileri:  
-
+Use one of the following things to transfer data from one page to another  
 1-) Notification center  
 2-) Delegate  
 3-) Closure  
-
-metotlarının üçününden seçtiğiniz bir tanesini kullanarak göndermenizi rica ediyoruz. Ödevin deadline'ı 01.06.2022 Çarşamba günü saat 17:00'a kadardır. Her türlü sorunuz için asistanlara ulaşmaktan çekinmeyin. Herkesin şimdiden emeğine sağlık, kolay gelsin.
-
 Notes:
 I used Notification Center for sending username and name values from the register page to calculation page and used Delegate method for sending values from calculation page to result page. Also used UserDefaults to save username and name values
 
